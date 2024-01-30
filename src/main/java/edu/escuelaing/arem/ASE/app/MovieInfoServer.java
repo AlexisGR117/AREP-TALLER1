@@ -71,7 +71,10 @@ public class MovieInfoServer {
      */
     public static String handleTitleValue(String titleValue) {
         if (titleValue != null) {
-            return CACHE.computeIfAbsent(titleValue, movieDataProvider::fetchMovieData);
+            return "HTTP/1.1 200 OK\r\n" +
+                    "Content-Type:application/json; charset=ISO-8859-1\r\n" +
+                    "\r\n" +
+                    CACHE.computeIfAbsent(titleValue, movieDataProvider::fetchMovieData);
         } else {
             return generateDefaultHtml();
         }
