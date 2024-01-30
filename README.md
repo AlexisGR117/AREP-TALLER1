@@ -15,7 +15,7 @@ Estas instrucciones te ayudarán a obtener una copia del proyecto en funcionamie
 
 1. Clona el repositorio:
     ```
-    git clone https://github.com/tu-nombre-de-usuario/AREP-TALLER1.git
+    git clone https://github.com/AlexisGR117/AREP-TALLER1.git
     ```
 2. Navega a la carpeta del proyecto:
     ```
